@@ -5,7 +5,8 @@ import Cocktails from './containers/Cocktails'
 import Home from './components/Home'
 import NavBar from './components/NavBar'
 import CocktailForm from './components/CocktailForm'
-import FindCocktail from './components/FindCocktail'
+import SearchCocktails from './components/SearchCocktails'
+import CocktailRecipe from './components/CocktailRecipe'
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
           <Route exact path='/' component={Home}/>
           <Route exact path='/cocktails' component={Cocktails}/>
           <Route exact path='/cocktails/new' component={CocktailForm}/>
-          <Route exact path='/findcocktail' component={FindCocktail}/>
+          <Route exact path='/search' component={SearchCocktails}/>
+          <Route exact path='/recipe' component={CocktailRecipe}/>
         </Switch>
       </div>
     </Router>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import AddCocktail from '../components/AddCocktail'
-
+import { Link } from 'react-router-dom'
 
 class Cocktails extends Component {
     constructor(){
@@ -20,6 +20,7 @@ class Cocktails extends Component {
         return(
             <div>
                 <AddCocktail/>
+                <Link to="/search"> Search for Cocktails</Link>
             </div>
         )
     }
