@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import List from './List'
+import DrinkList from './DrinkList'
 
 
 export default class SearchCocktails extends Component {
@@ -65,7 +65,7 @@ export default class SearchCocktails extends Component {
                 <input type="text" name="ingredient" onChange={this.handleChange} onKeyPress={this.handleKeypress}/>
                 <button onClick={this.handleClick} >Search</button>
                 <h2>{this.state.ingredient.toUpperCase()}</h2>
-                <List cocktails={this.state.cocktails}/>
+                <DrinkList cocktails={this.state.cocktails}/>
             </div>
         )
     }

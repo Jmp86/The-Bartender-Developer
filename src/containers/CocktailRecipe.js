@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import IngredientList from '../components/IngredientList'
 
 class CocktailRecipe extends Component {
     constructor(props){
@@ -58,9 +58,12 @@ class CocktailRecipe extends Component {
     render(){
         return(
             <div>
+                <h1>{this.state.name}</h1>
                 <img src={this.state.image} alt={this.state.name}/>
-                
-                
+                <h2>Ingredients</h2>
+                <IngredientList measurement={this.state.measurements} ingredient={this.state.ingredients}/>
+                <h2>Instructions</h2>
+                <p>{this.state.instructions}</p>                  
             </div>
         )
     }

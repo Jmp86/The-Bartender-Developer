@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 
-function Item (props) {
+function Drink (props) {
 
             return (
                 <li>
@@ -12,4 +12,4 @@ function Item (props) {
 }
 
 
-export default Item
+export default Drink

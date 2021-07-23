@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
-import Item from './Item'
+import Drink from './Drink'
 
 
-class List extends Component {
+class DrinkList extends Component {
 
-    renderItems() {
+    renderDrinks() {
         if(Array.isArray(this.props.cocktails)){
-        return this.props.cocktails.map(item => <Item key={item.strDrink} item={item}/>)
+        return this.props.cocktails.map(item => <Drink key={item.strDrink} item={item}/>)
     } else {
         return <li>Not a valid ingredient</li>
     }
@@ -15,10 +15,10 @@ class List extends Component {
     render(){
         return (
                 <ul>
-                    {this.renderItems()}
+                    {this.renderDrinks()}
                 </ul>
         )
     }
 }
 
-export default List 
+export default DrinkList 
