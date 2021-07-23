@@ -54,16 +54,6 @@ class NavBar extends Component {
                 >
                     Add A Cocktail
                 </NavLink>
-                <NavLink
-                    to='/recipe'
-                    exact
-                    style={link}
-                    activeStyle={{
-                        background: 'blue'
-                    }}
-                >
-                    Cocktail Recipe
-                </NavLink>
             </div>
         )
     }

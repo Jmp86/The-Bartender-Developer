@@ -2,14 +2,7 @@ import React, { Component } from 'react'
 import Item from './Item'
 
 
-
 class List extends Component {
-    constructor(){
-        super()
-        this.state = {
-            cocktail: []
-        }
-    }
 
     renderItems() {
         if(Array.isArray(this.props.cocktails)){
