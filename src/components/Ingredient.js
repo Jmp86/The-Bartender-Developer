@@ -2,7 +2,7 @@ import React from 'react'
 
 function Ingredient(props){
     return (
-        <li>{props.item}</li>
+            <div>{props.item}</div>
     )
 }
 

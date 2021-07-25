@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import Ingredient from './Ingredient'
 import Measurement from './Measurement'
+import '../App.css'
+
 class IngredientList extends Component {
 
     renderIngredients(){
@@ -15,9 +17,10 @@ class IngredientList extends Component {
      
      render(){
          return(
-             <ul>
-                 {this.renderMeasurements()}{this.renderIngredients()}
-             </ul>
+             <div className="ingredientList">
+                 {this.renderMeasurements()}
+                 {this.renderIngredients()}
+             </div>
          )
      }
 }

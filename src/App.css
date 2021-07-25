@@ -1,9 +1,11 @@
-.App {
+.ingredientList {
   text-align: center;
+  display: grid;
+  color: blue;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.image{
+  
+  width: 400px;
+  height: 400px;
 }
-

@@ -1,5 +1,31 @@
 {
-    "cocktails":[
-        
-    ]
+  "cocktails": [
+    {
+      "name": "Vodka Redbull",
+      "ingredients": [
+        "2oz Vodka",
+        "1 Redbull"
+      ],
+      "recipe": "Pour 2 shots of vodka in a glass full of ice. Top with Redbull",
+      "id": 1
+    },
+    {
+      "name": "Mimosa",
+      "ingredients": [
+        "Orange Juice",
+        "Champagne"
+      ],
+      "recipe": "Mix equal parts into champagne flute",
+      "id": 2
+    },
+    {
+      "name": "Captain and Coke",
+      "ingredients": [
+        "2oz Captain Morgan",
+        "6oz Coke"
+      ],
+      "recipe": "Fill glass with ice, add 2 ounces of Captain Morgan Rum. Fill the rest of the glass with Coke and stir.",
+      "id": 3
+    }
+  ]
 }

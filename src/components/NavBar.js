@@ -32,7 +32,7 @@ class NavBar extends Component {
                         background: 'blue'
                     }}
                 >
-                    Cocktails
+                    My Cocktails
                 </NavLink>
                 <NavLink
                     to='/search'

@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
+import { Redirect, withRouter } from 'react-router-dom'
 
-export default class CocktailForm extends Component {
+class CocktailForm extends Component {
     constructor(){
         super()
         this.state = {
             name: '',
-            ingredients: '',
+            ingredients: [],
             recipe: ''
         }
     }
@@ -18,8 +19,25 @@ export default class CocktailForm extends Component {
 
     handleSubmit = (e) => {
         e.preventDefault()
-        console.log(e.target[0].value)
-    }
+
+            fetch(`http://localhost:3001/cocktails`, {
+                method: "POST", 
+                headers: {
+                    "Content-type": "application/json", 
+                    "Accept": "application/json"
+                }, 
+                body: JSON.stringify({
+                  "name": e.target[0].value,
+                  "ingredients": e.target[1].value.split('\n'),
+                  "recipe": e.target[2].value
+        
+                })
+            })
+            .then(res => res.json())
+            .then(console.log)
+            this.props.history.push('/cocktails')
+          }  
+        
 
     render(){
         return(
@@ -32,8 +50,10 @@ export default class CocktailForm extends Component {
                     <label>Recipe:</label><br/>
                     <textarea type="text" name="recipe" onChange={this.handleChange}/><br/>
                     <input type="submit"/>
+                    
                 </form>
             </div>
         )
     }
 }
+export default withRouter(CocktailForm)

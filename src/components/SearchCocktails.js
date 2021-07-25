@@ -20,7 +20,7 @@ export default class SearchCocktails extends Component {
 //             }
 //     })  
 //     .then(res => res.json()) 
-//     .then(cocktails => this.setState({ cocktails: cocktails.drinks })) 
+//     .then(cocktails => this.setState({ cocktails: cocktails.drinks, ingredient: 'Rum' })) 
 //     .catch(error => {
 //         throw(error);
 //     }) 
