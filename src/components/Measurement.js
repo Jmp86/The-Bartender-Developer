@@ -3,7 +3,7 @@ import React from 'react'
 function Measurement(props){
     return (
 
-            <div>{props.item}</div>
+            <tr>{props.item}</tr>
 
     )
 }

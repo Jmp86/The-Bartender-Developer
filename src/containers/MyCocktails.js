@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import AddCocktail from '../components/AddCocktail'
-import { Link } from 'react-router-dom'
+import ViewCocktails from '../components/ViewCocktails'
 import '../App.css'
 
 
@@ -39,7 +39,7 @@ class MyCocktails extends Component {
             <div className="myCocktails" style={{ backgroundImage: "url(https://s26162.pcdn.co/wp-content/uploads/2019/02/cocktails.jpg)"}}>
                 {this.renderCocktails()}<br/>
                 <AddCocktail/><br/>
-                <Link to="/search"> Search for Cocktails</Link>
+                <ViewCocktails/>
             </div>
         )
     }

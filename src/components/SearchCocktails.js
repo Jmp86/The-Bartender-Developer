@@ -63,7 +63,7 @@ export default class SearchCocktails extends Component {
                <div className="searchBox">
                 <label>Search by Ingredient</label><br/>
                 <input type="text" name="ingredient" onChange={this.handleChange} onKeyPress={this.handleKeypress}/>
-                <button onClick={this.handleClick} >Search</button>
+                <button className="button" onClick={this.handleClick} >Search</button>
                 <h2>{this.state.ingredient.toUpperCase()}</h2>
                 <DrinkList cocktails={this.state.cocktails}/>
                </div>

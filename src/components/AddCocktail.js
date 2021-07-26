@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 function AddCocktail(){
     return(
         <Link to={'/cocktails/new'}>
-            <button>Add a Cocktail</button>
+            <button className="button">Add a Cocktail</button>
         </Link>
     )
 }
