@@ -58,12 +58,14 @@ table {
   margin-left: auto;
   margin-right: auto;
 }
+
 .image {
   margin-left: auto;
   margin-right: auto;
   width: 400px;
   height: 400px;
 }
+
 .button { 
   position: relative;
   background-color: #000000;
@@ -75,6 +77,16 @@ table {
   font-size: 32px;
   justify-self: center;
   margin: 2rem;
+}
+
+.drinkList {
+  color: whitesmoke;
+  
+}
+
+.drinkList:hover {
+  color: blue;
+  
 }
 
 .submit {

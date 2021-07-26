@@ -6,7 +6,7 @@ function Drink (props) {
 
             return (
                 <li>
-                    <Link to={`/recipe/${props.item.idDrink}`}>{props.item.strDrink}</Link>  
+                    <Link className="drinkList" to={`/recipe/${props.item.idDrink}`}>{props.item.strDrink}</Link>  
                 </li>       
         )
 }
