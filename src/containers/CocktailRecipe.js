@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import IngredientList from '../components/IngredientList'
+import ViewCocktails from '../components/ViewCocktails'
 import '../App.css'
 
 class CocktailRecipe extends Component {
@@ -55,16 +56,20 @@ class CocktailRecipe extends Component {
       })
       )
       }
-
+      
     render(){
         return(
-            <div>
+            <div className="recipe" style={{ backgroundImage: "url(https://images.pexels.com/photos/4457038/pexels-photo-4457038.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)"}}>
+               <div className="recipeBox">
                 <h1>{this.state.name}</h1>
                 <img className="image" src={this.state.image} alt={this.state.name}/>
                 <h2>Ingredients</h2>
                 <IngredientList measurement={this.state.measurements} ingredient={this.state.ingredients}/>
                 <h2>Instructions</h2>
-                <p>{this.state.instructions}</p>                  
+                <p>{this.state.instructions}</p> 
+                <ViewCocktails/>
+               </div> 
+                                 
             </div>
         )
     }

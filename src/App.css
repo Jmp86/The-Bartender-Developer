@@ -1,11 +1,95 @@
-.ingredientList {
+.home, .form, .search, .recipe {
+  min-height: 800px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
-  display: grid;
-  color: blue;
+  color:whitesmoke;
+  font-size: 30px;
+  
 }
 
-.image{
-  
+.myCocktails {
+  min-height: 700px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color:whitesmoke;
+  font-size: 20px;
+  text-align: center;
+ 
+}
+
+.recipeBox {
+  background-color: rgba(0, 0, 0, 0.589);
+  border: rgba(252, 252, 252, 0.705) solid 1px;
+  padding: 1rem;
+  width: 600px;
+  margin: 2rem 2rem;
+  display: inline-grid; 
+  box-shadow: 3px 4px black;
+  color:whitesmoke;
+  block-size: fit-content;
+  text-align: center;
+}
+
+.tile, .searchBox, .input {
+  background-color: rgba(0, 0, 0, 0.589);
+  border: rgba(252, 252, 252, 0.705) solid 1px;
+  padding: 2rem;
+  width: 300px;
+  display: inline-grid;
+  margin: 2rem 2rem;
+  box-shadow: 3px 4px black;
+  block-size: fit-content;
+  border-radius: 10px;
+}
+
+
+.NavBar {
+  text-align: center;
+ 
+}
+
+.image {
+  margin-left: auto;
+  margin-right: auto;
   width: 400px;
   height: 400px;
 }
+.button { 
+  position: relative;
+  background-color: #000000;
+  border: none; 
+  border-radius: 5px; 
+  height: 40px;
+  width: max-content;
+  color: whitesmoke;
+  font-size: 32px;
+  justify-self: center;
+  margin: 6rem;
+}
+
+.submit {
+  position: relative;
+  background-color: #000000;
+  border: 1px; 
+  border-radius: 5px; 
+  height: 40px;
+  width: max-content;
+  color: whitesmoke;
+  font-size: 20px;
+  justify-self: center;
+  margin: 1rem;
+}
+
+button:hover {
+  background-color: whitesmoke;
+  border: black solid 1px;
+  color: black;
+} 
+
+

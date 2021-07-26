@@ -1,10 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import '../App.css'
 
 function ViewCocktails(){
     return(
-        <Link to={'/cocktails'}>
-            <button>Check Out Some Cocktails</button>
+        <Link to={'/search'}>
+            <button className="button">Find Cocktail Recipes</button>
         </Link>
     )
 }

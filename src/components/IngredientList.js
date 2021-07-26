@@ -17,10 +17,10 @@ class IngredientList extends Component {
      
      render(){
          return(
-             <div className="ingredientList">
-                 {this.renderMeasurements()}
-                 {this.renderIngredients()}
-             </div>
+             <>
+                 <div className="mList">{this.renderMeasurements()}</div>
+                 <div className="iList">{this.renderIngredients()}</div>
+             </>
          )
      }
 }

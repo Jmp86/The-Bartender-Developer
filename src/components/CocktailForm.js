@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { Redirect, withRouter } from 'react-router-dom'
+import { withRouter } from 'react-router-dom'
+import '../App.css'
 
 class CocktailForm extends Component {
     constructor(){
@@ -37,19 +38,19 @@ class CocktailForm extends Component {
             .then(console.log)
             this.props.history.push('/cocktails')
           }  
-        
+          
 
     render(){
         return(
-            <div>
-                <form onSubmit={this.handleSubmit}>
+            <div className='form' style={{ backgroundImage:"url(https://spiritofyork.com/wp-content/uploads/2020/05/image6-1.jpg)"}}>
+                <form className='input' onSubmit={this.handleSubmit}>
                     <label>Cocktail Name:</label><br/>
                     <input type="text" name="name" onChange={this.handleChange}/><br/>
                     <label>Ingredients:</label><br/>
-                    <textarea type="text" name="ingredients" onChange={this.handleChange}/><br/>
+                    <textarea type="text" name="ingredients" onChange={this.handleChange} rows="6"/><br/>
                     <label>Recipe:</label><br/>
-                    <textarea type="text" name="recipe" onChange={this.handleChange}/><br/>
-                    <input type="submit"/>
+                    <textarea type="text" name="recipe" onChange={this.handleChange} rows="5"/><br/>
+                    <input className='submit' type="submit"/>
                     
                 </form>
             </div>

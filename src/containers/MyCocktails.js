@@ -1,14 +1,17 @@
 import React, { Component } from 'react'
 import AddCocktail from '../components/AddCocktail'
 import { Link } from 'react-router-dom'
+import '../App.css'
 
-class Cocktails extends Component {
+
+class MyCocktails extends Component {
     constructor(){
         super()
         this.state = {
             cocktails: []
         }
     }
+
 
     componentDidMount(){
         fetch('http://localhost:3001/cocktails')
@@ -18,7 +21,7 @@ class Cocktails extends Component {
 
     renderCocktails(){
         return this.state.cocktails.map(cocktail => 
-            <div>
+            <div className='tile'>
             <h2>{cocktail.name}</h2>
             <h3>Ingredients</h3>
             <ul>
@@ -33,12 +36,12 @@ class Cocktails extends Component {
     
     render(){
         return(
-            <div>
-                {this.renderCocktails()}
+            <div className="myCocktails" style={{ backgroundImage: "url(https://s26162.pcdn.co/wp-content/uploads/2019/02/cocktails.jpg)"}}>
+                {this.renderCocktails()}<br/>
                 <AddCocktail/><br/>
                 <Link to="/search"> Search for Cocktails</Link>
             </div>
         )
     }
 }
-export default Cocktails
+export default MyCocktails
